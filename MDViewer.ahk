@@ -6,6 +6,7 @@
 file = %1%
 file_content = # No file specified\nMake sure to open a file with this app.
 if (file) {
+    FileEncoding UTF-8
     FileRead, file_content, %file%
     file_content := StrReplace(file_content, "\", "\\")
     file_content := StrReplace(file_content, "`r`n", "\n")
